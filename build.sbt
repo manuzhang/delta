@@ -26,10 +26,10 @@ sparkVersion := "2.4.2"
 
 libraryDependencies ++= Seq(
   // Adding test classifier seems to break transitive resolution of the core dependencies
-  "org.apache.spark" %% "spark-hive" % sparkVersion.value % "provided",
-  "org.apache.spark" %% "spark-sql" % sparkVersion.value % "provided",
-  "org.apache.spark" %% "spark-core" % sparkVersion.value % "provided",
-  "org.apache.spark" %% "spark-catalyst" % sparkVersion.value % "provided",
+  "org.apache.spark" %% "spark-hive" % sparkVersion.value,
+  "org.apache.spark" %% "spark-sql" % sparkVersion.value,
+  "org.apache.spark" %% "spark-core" % sparkVersion.value,
+  "org.apache.spark" %% "spark-catalyst" % sparkVersion.value,
 
   // Test deps
   "org.scalatest" %% "scalatest" % "3.0.5" % "test",
